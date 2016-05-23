@@ -11,7 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 
   		<!-- FONT -->
-  		<link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+  		<link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
 
   		<!-- CSS/Styling -->
   		<link rel="stylesheet" href="css/normalize.css">
@@ -19,21 +19,30 @@
  		<link rel="stylesheet" href="css/styles.css">
 
  		<!-- JavaScript -->
-   		<script src="script.js"></script>
+ 		<script src="js/jquery-2.2.4.min.js"></script>
+   		<script src="js/script.js"></script>
+   		
 
 	</head>
 	<body>
-		<h1 class="name box-shadow">Leo Generali</h1>
+	<h1 class="name box-shadow">Leo Generali</h1>
 		<div class="container">
-  			<div class="row vertical-center">
-    			<p class="body-text box-shadow ">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut viverra eget lacus sit amet condimentum. Mauris vulputate efficitur erat nec eleifend. Nulla facilisi. Ut elementum tortor purus, vel tincidunt tortor ultrices non. Proin aliquam justo in dui feugiat, a dapibus lacus rutrum. In eu lacus eu ipsum pulvinar facilisis. Aenean eget nulla molestie, dignissim nisl rutrum, efficitur nulla. Quisque mattis dapibus nunc ac lobortis.</p>
+ 			<div class="row vertical-center">
+    			<p class="body-text box-shadow inactive" id="about">I’m a business analyst, web development student, and avid runner. I live in Washington DC and work at Truven Health Analytics. Projects and blog to come.</p>
+    			<p class="body-text box-shadow"  id="contact">
+      				Email: <a href="mailto:me@leogenerali.com?Subject=Hello!" target="_blank">me@leogenerali.com</a><br>
+      				Twitter: <a href="https://twitter.com/itsleeohgee" target="_blank">@itsleeohgee</a><br>
+     				Instagram: <a href="https://www.instagram.com/itsleeohgee/" target="_blank">@itsleeohgee</a><br>
+      				<a href="https://www.linkedin.com/in/leogenerali" target="_blank">LinkedIn</a><br>
+      				<a href="https://github.com/leo-generali" target="_blank">GitHub</a></p>
+    			<p class="body-text box-shadow inactive" id="projects">This Website</p>
   			</div>
   			<div class="row">
-			    <ul class="info-section">
-			    	<li class="info-inner"><a href="#">About</a></li>
-			    	<li class="info-inner"><a href="#">Contact</a></li>
-			    </ul>
-			</div>
+    			<ul class="info-section">
+      				<li class="info-inner" id="about-btn"><a href="#">About</a></li>
+      				<li class="info-inner" id="contact-btn"><a href="#">Contact</a></li>
+    			</ul>
+  			</div>
 		</div>
 	</body>
 </html>

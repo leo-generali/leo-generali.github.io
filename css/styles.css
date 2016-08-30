@@ -5,8 +5,8 @@ a{
 body{
   /*background-color: #F8BBD0; */
   background: #005C97; 
-  background: -webkit-linear-gradient(to left, #005C97 , #363795); 
-  background: linear-gradient(to left, #005C97 , #363795);
+  background: -webkit-linear-gradient(to left, #000428 , #004e92); 
+  background: linear-gradient(to left, #000428 , #004e92);
 }
 
 .box-shadow{

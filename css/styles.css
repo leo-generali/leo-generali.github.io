@@ -9,6 +9,7 @@ body{
   background: linear-gradient(to left, #000428 , #004e92);
 }
 
+
 .centeredText{
   text-align: center;
 }
@@ -21,14 +22,20 @@ body{
   background-color: white;
   padding: 1rem;
   font-size: 2.4rem;
+  border-radius: 0 0 10px 10px;
 }
 
 .name{
-  padding: 2rem;
+  padding: 1rem;
   background-color: white;
   text-align:center;
 }
 
+.header{
+  margin-bottom: 0px;
+  background-color: grey;
+  border-radius: 10px 10px 0 0;
+}
 /* Mobile first queries */
 
 /* Larger than mobile */

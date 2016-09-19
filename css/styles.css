@@ -1,56 +1,135 @@
+h1, h2, h3, h4, h5, h6{
+	color: #111111;
+	margin: 0rem;
+	padding: 0rem;
+}
+
 a{
-  text-decoration: none;
+	text-decoration: none;
 }
 
 body{
-  /*background-color: #F8BBD0; */
-  background: #005C97; 
-  background: -webkit-linear-gradient(to left, #000428 , #004e92); 
-  background: linear-gradient(to left, #000428 , #004e92);
+	/*background-color: #F8BBD0; */
+	background: #005C97; 
+	background: -webkit-linear-gradient(to left, #000428 , #004e92); 
+	background: linear-gradient(to left, #000428 , #004e92);
 }
 
-
-.centeredText{
-  text-align: center;
+footer{
+	margin-top: 5rem;
+	background-color: white;
+	text-align: center;
 }
 
-.box-shadow{
-  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+#projects{
+	padding: 1rem 2rem;
 }
 
-.body-text{
-  background-color: white;
-  padding: 1rem;
-  font-size: 2.4rem;
-  border-radius: 0 0 10px 10px;
+.arrow{
+	margin-top: 1em;
+	text-align: center;
+	opacity: 0.80;
 }
 
 .name{
-  padding: 1rem;
-  background-color: white;
-  text-align:center;
+	background-color: white;
+	text-align: center;
+	width: 90%;
+	margin: 0 auto;
 }
 
-.header{
-  margin-bottom: 0px;
-  background-color: grey;
-  border-radius: 10px 10px 0 0;
+.box{
+	background-color: white;
+	position: relative;
+	margin-top: 2em;
 }
+
+.box-shadow{
+	box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.intro{
+	margin-top: 35vh;
+	margin-bottom: 35vh;
+	text-align: center;
+}
+
+.introIcons{
+	color: #111111;
+}
+
+.introIcons:hover{
+	color: #373737;
+}
+
+.projectImage{ 
+	padding: 1rem 0 1rem 1rem;
+}
+
+.projectButtons{
+	text-align: center;
+}
+
+.info{
+	padding: 10px;
+}
+
+.heart{
+	font-size: 1.2rem;
+	margin: 0em;
+}
+
+/*   COLOR Scheme:
+
+Black: #111111
+Black (Hover): #373737
+White:
+
+
+*/
+
+
 /* Mobile first queries */
 
 /* Larger than mobile */
 @media (min-width: 400px) {
+	.projectImage{
+		width: 60%;
+	}
+
 }
 
 /* Larger than phablet */
 @media (min-width: 550px) {
-   
+	 .name{
+		background-color: white;
+		text-align: center;
+		width: 40%;
+		margin: 0 auto;
+	}
+
+	.projectButtons{
+		text-align: left;
+	}
+
+	.projectImage{
+		width: 100%;
+	}
+
+	.projectImage{ 
+		padding-top: 1rem;
+	}
+
+	.imageWrapper{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
 }
 
 /* Larger than tablet */
 @media (min-width: 750px) {}
 /* Larger than desktop */
 @media (min-width: 1000px) {}
-
 /* Larger than Desktop HD */
 @media (min-width: 1200px) {}

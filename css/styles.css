@@ -67,7 +67,8 @@ footer h3 a{
 }
 
 .projectImage{ 
-	padding: 1rem 0 1rem 1rem;
+	padding: 1rem;
+	width: 80%;
 }
 
 .projectButtons{
@@ -118,10 +119,6 @@ White:
 
 	.projectImage{
 		width: 100%;
-	}
-
-	.projectImage{ 
-		padding-top: 1rem;
 	}
 
 	.imageWrapper{

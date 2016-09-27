@@ -24,7 +24,7 @@ footer h3 a{
 }
 
 div p{
-	margin-bottom: 0.5rem;
+	margin-bottom: 1.0rem;
 }
 
 #projects{
@@ -96,8 +96,8 @@ div p{
 }
 
 .button.button-primary:hover{
-	background-color: #111111
-	border-color: #111111;
+	background-color: #000
+	border-color: #000;
 }
 
 

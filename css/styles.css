@@ -1,5 +1,5 @@
 h1, h2, h3, h4, h5, h6{
-	color: #111111;
+	color: #2d2d2d;
 	margin: 0rem;
 	padding: 0rem;
 }
@@ -10,9 +10,7 @@ a{
 
 body{
 	/*background-color: #F8BBD0; */
-	background: #005C97; 
-	background: -webkit-linear-gradient(to left, #000428 , #004e92); 
-	background: linear-gradient(to left, #000428 , #004e92);
+	background: #5281FF; 
 }
 
 footer{
@@ -23,6 +21,10 @@ footer{
 
 footer h3 a{
 	padding: 0.5rem;
+}
+
+div p{
+	margin-bottom: 0.5rem;
 }
 
 #projects{
@@ -59,11 +61,11 @@ footer h3 a{
 }
 
 .introIcons{
-	color: #111111;
+	color: #2d2d2d;
 }
 
 .introIcons:hover{
-	color: #373737;
+	color: #1e1e1e;
 }
 
 .projectImage{ 
@@ -88,6 +90,22 @@ footer h3 a{
 	padding: 10px 30px;
 }
 
+.button.button-primary{
+	background-color: #2d2d2d;
+	border-color: #2d2d2d;
+}
+
+.button.button-primary:hover{
+	background-color: #111111
+	border-color: #111111;
+}
+
+
+/*.button.button-primary{
+	background-color: #011936;
+	border-color: #011936;
+}
+*/
 /*   COLOR Scheme:
 
 Black: #111111
@@ -111,7 +129,6 @@ White:
 /* Larger than phablet */
 @media (min-width: 550px) {
 	 .name{
-		background-color: white;
 		text-align: center;
 		width: 40%;
 		margin: 0 auto;

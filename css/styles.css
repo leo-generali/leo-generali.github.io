@@ -90,17 +90,16 @@ div p{
 	padding: 10px 30px;
 }
 
-.button.button-primary{
+/*.button.button-primary{
 	background-color: #2d2d2d;
 	border-color: #2d2d2d;
 }
 
-.button.button-primary:hover{
+.button.button-primary:focus{
 	background-color: #000
 	border-color: #000;
 }
-
-
+*/
 /*.button.button-primary{
 	background-color: #011936;
 	border-color: #011936;

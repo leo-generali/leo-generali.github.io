@@ -1,0 +1,33 @@
+/*
+
+	Color Info
+	Background: 			#F7F7FA
+	Title: 					#ABB3ED
+	Muted-Title: 			#C9CEF4
+	Neutral: 				#DFD9D9
+	Some Other Title Col: 	#B3C1F0
+	Text: 					#857F82
+	Contrast: 				#DEA9B5
+
+*\
+
+/*
+
+	Overwritten Styles
+
+*/
+
+p, h1, h2, h3, h4, h5, h6, a{
+	font-family: 'Muli', Sans-Serif;
+}
+
+
+/*
+
+	Header	
+
+*/
+
+#logo{
+
+}

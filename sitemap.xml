@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://leogenerali.com/projects/rgb-game/</loc>
+    <lastmod>2017-01-03T23:37:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leogenerali.com/blog/post-one/</loc>
+    <lastmod>2017-01-03T23:37:52-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://leogenerali.com/blog/</loc>
+    <lastmod>2017-01-03T23:37:52-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://leogenerali.com/</loc>
+    <lastmod>2017-01-03T23:37:52-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://leogenerali.com/projects/</loc>
+    <lastmod>2017-01-03T23:37:52-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

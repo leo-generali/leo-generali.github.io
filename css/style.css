@@ -17,9 +17,14 @@
 
 */
 
-p, h1, h2, h3, h4, h5, h6, a{
+html{
+	overflow-y: scroll;
+}
+
+p, h1, h2, h3, h4, h5, h6, a, time{
 	font-family: 'Muli', Sans-Serif;
-	color: #343233
+	color: #343233;
+	margin: 0;
 }
 
 body{
@@ -94,4 +99,53 @@ footer{
 	font-size: 3em;
 
 	color: #121A54;
+}
+
+/*
+
+	List
+
+*/
+
+.blog-list{
+	justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+/*
+
+	Projects
+
+*/
+
+.projects{
+	padding: 10px;
+}
+
+.project-title{
+
+}
+
+.project-tech{
+	background-color: darkgrey;
+}
+
+.projectBtn{
+	margin: 10px 10px 10px 0px;
+}
+
+
+.projectBtn-link{
+	background-color: #343233;
+	color: white;
+
+	text-decoration: none;
+	padding: 5px 15px;
+	border-radius: 5px;
+}
+
+.projectBtn-link:hover{
+	background-color: #1A1B1B;
+	text-decoration: underline;
 }

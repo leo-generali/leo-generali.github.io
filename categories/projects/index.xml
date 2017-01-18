@@ -1,23 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Leo Generali</title>
-    <link>/index.xml</link>
-    <description>Recent content on Leo Generali</description>
+    <title>Projects on Leo Generali</title>
+    <link>/categories/projects/index.xml</link>
+    <description>Recent content in Projects on Leo Generali</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2017 23:37:52 -0500</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
-    
-    <item>
-      <title>Test Blog Post</title>
-      <link>/blog/post-one/</link>
-      <pubDate>Tue, 03 Jan 2017 23:37:52 -0500</pubDate>
-      
-      <guid>/blog/post-one/</guid>
-      <description>&lt;p&gt;This is a blog post.&lt;/p&gt;
-</description>
-    </item>
+    <atom:link href="/categories/projects/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Projects</title>

@@ -22,13 +22,13 @@
 }
 
 [class*='col-'] [class*='col-']:last-child {
-	padding-right: 0;
+	padding-righPt: 0;
 }
 
 .grid {
 	width: 100%;
 	max-width: 960px;
-	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
+	/*min-width: 748px;*/ /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
 	margin: 0 auto;
 	overflow: hidden;
 }

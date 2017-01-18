@@ -15,7 +15,7 @@
       
       <guid>/projects/</guid>
       <description>&lt;div class=&#34;projects&#34;&gt;  
-  &lt;h3&gt;Bee Movie Ipsum Generator&lt;/h3&gt;
+  &lt;h3 class=&#34;project-title&#34;&gt;Bee Movie Ipsum Generator&lt;/h3&gt;
   &lt;h4&gt;HTML, CSS, JavaScript&lt;/h4&gt;
   &lt;p&gt;Coded a placeholder text generator using vanilla JavaScript and a custom MVC developmental framework to organize the code. The program automatically generates a number of sentences or paragraphs based on user inputs. Uses bespoke, hand-picked &lt;i&gt;Bee Movie&lt;/i&gt; quotes to provide new Jerry Seinfeld-flavored filler texts for your projects anytime.&lt;/p&gt;
   &lt;div class=&#34;projectBtn&#34;&gt;
@@ -25,8 +25,8 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;projects&#34;&gt;
-  &lt;h3&gt;Guess the Color!&lt;/h3&gt;
-  &lt;h4&gt;&lt;strong&gt;HTML, Skeleton, JavaScript&lt;/strong&gt;&lt;/h4&gt;
+  &lt;h3 class=&#34;project-title&#34;&gt;Guess the Color!&lt;/h3&gt;
+  &lt;h4&gt;HTML, Skeleton, JavaScript&lt;/h4&gt;
   &lt;p&gt;Players are given a random RGB value and must guess which of the squares is that color. A variable score is added to the player&#39;s point total depending on how many attempts the player took to find the right color. The game is won once the player reaches 300 points. DOM manipulation is handled through vanilla Javascript.&lt;/p&gt;
   &lt;div class=&#34;projectBtn&#34;&gt;
     &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/rgb-game&#34;&gt;Link&lt;/a&gt;

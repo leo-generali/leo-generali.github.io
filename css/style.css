@@ -19,21 +19,30 @@
 
 html{
 	overflow-y: scroll;
+  	font-size: 62.5%; 
+}
+
+
+body{
+	font-size: 1.6em; /* currently ems cause chrome bug misinterpreting rems on body element */
+	line-height: 1.5;
+	font-family: 'Muli', Sans-Serif;
+	
+	background-color: #F7F7FA;
+
 }
 
 p, h1, h2, h3, h4, h5, h6, a, time{
-	font-family: 'Muli', Sans-Serif;
 	color: #343233;
 	margin: 0;
 }
 
 body{
-	background-color: #F7F7FA;
 }
 
 nav{
 	display: flex;
-	margin: 25px 5%;
+	margin: 2.5rem 5%;
 }
 
 footer{
@@ -47,7 +56,7 @@ footer{
 */
 
 #logo{
-	padding: 20px;
+	padding: 2.0rem;
 
 	color: #F7F7FA;
 	background-color: #121A54;
@@ -59,9 +68,9 @@ footer{
 	display: flex;
 	align-items: center;
 
-	margin: 0 20px;
+	margin: 0 2.0rem;
 	list-style-type: none;
-	padding: 10px 0;
+	padding: 1.0rem 0;
 	margin-left: auto;
 
 
@@ -120,11 +129,14 @@ footer{
 */
 
 .projects{
-	padding: 10px;
+	padding: 1.0rem;
+	margin-bottom: 1.0rem;
+	border-radius: 5px;
+	box-shadow: 0 0 3px lightgrey;
 }
 
 .project-title{
-
+	color: #121A54;
 }
 
 .project-tech{
@@ -132,20 +144,57 @@ footer{
 }
 
 .projectBtn{
-	margin: 10px 10px 10px 0px;
+	margin: 1.0rem 1.0rem 1.0rem 0rem;
 }
 
 
 .projectBtn-link{
-	background-color: #343233;
-	color: white;
-
-	text-decoration: none;
-	padding: 5px 15px;
-	border-radius: 5px;
+    display: inline-block;
+    height: 38px;
+    padding: 0 30px;
+    color: #555;
+    text-align: center;
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 38px;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    white-space: nowrap;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
 }
 
 .projectBtn-link:hover{
-	background-color: #1A1B1B;
-	text-decoration: underline;
+    color: #333;
+    border-color: #888;
+    outline: 0;
+}
+
+/* Larger than mobile */
+@media (min-width: 400px) {
+
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+
 }

@@ -6,16 +6,16 @@
     <description>Recent content in Blog on Leo Generali</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 03 Jan 2017 23:37:52 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 05 Mar 2017 21:01:10 -0500</lastBuildDate>
     <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Test Blog Post</title>
-      <link>/blog/post-one/</link>
-      <pubDate>Tue, 03 Jan 2017 23:37:52 -0500</pubDate>
+      <title>About Me</title>
+      <link>/blog/about-me/</link>
+      <pubDate>Sun, 05 Mar 2017 21:01:10 -0500</pubDate>
       
-      <guid>/blog/post-one/</guid>
-      <description>&lt;p&gt;This is a blog post.&lt;/p&gt;
+      <guid>/blog/about-me/</guid>
+      <description>&lt;p&gt;This blog will serve as a collection of things I find interesting or exciting. You can expect to find more posts about coding and running in the future.&lt;/p&gt;
 </description>
     </item>
     

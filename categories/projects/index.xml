@@ -15,11 +15,41 @@
       
       <guid>/projects/</guid>
       <description>&lt;div class=&#34;projects&#34;&gt;  
+  &lt;h3 class=&#34;project-title&#34;&gt;Metro Map&lt;/h3&gt;
+  &lt;h4&gt;HTML, CSS, Knockout.js&lt;/h4&gt;
+  &lt;p&gt;Single page, responsive DC Metro map application. Users can either query through all stations through a search bar, or click on the data points to receive incoming transit information. AJAX requests are used to pull information from WMATA and District of Columbia Open Data APIs.&lt;/p&gt;
+  &lt;div class=&#34;projectBtn&#34;&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/metro-map&#34;&gt;Link&lt;/a&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;https://github.com/leo-generali/metro-map&#34;&gt;Github&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;projects&#34;&gt;
+  &lt;h3 class=&#34;project-title&#34;&gt;Guess the Color!&lt;/h3&gt;
+  &lt;h4&gt;HTML, Skeleton, JavaScript&lt;/h4&gt;
+  &lt;p&gt;Quickly find information about your favorite films and settle all those barroom bets with your friends. AJAX requests are used to obtain data courtesy of the &lt;a href=&#39;http://www.omdbapi.com/&#39;&gt;Open Movie Database&lt;/a&gt;.&lt;/p&gt;
+  &lt;div class=&#34;projectBtn&#34;&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/film-facts&#34;&gt;Link&lt;/a&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;https://github.com/leo-generali/film-facts&#34;&gt;Github&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;projects&#34;&gt;  
+  &lt;h3 class=&#34;project-title&#34;&gt;Simon Says&lt;h3&gt;
+  &lt;h4&gt;HTML, CSS, JavaScript&lt;/h4&gt;
+  &lt;p&gt;Test your memory by playing a digital version of the children&#39;s classic, Simon. Start it up and see how far you can make it before the game gets tough for you! Uses Flexbox for object positioning.&lt;/p&gt;
+  &lt;div class=&#34;projectBtn&#34;&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/simon-says&#34;&gt;Link&lt;/a&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;https://github.com/leo-generali/simon-says&#34;&gt;Github&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;projects&#34;&gt;  
   &lt;h3 class=&#34;project-title&#34;&gt;Bee Movie Ipsum Generator&lt;/h3&gt;
   &lt;h4&gt;HTML, CSS, JavaScript&lt;/h4&gt;
   &lt;p&gt;Coded a placeholder text generator using vanilla JavaScript and a custom MVC developmental framework to organize the code. The program automatically generates a number of sentences or paragraphs based on user inputs. Uses bespoke, hand-picked &lt;i&gt;Bee Movie&lt;/i&gt; quotes to provide new Jerry Seinfeld-flavored filler texts for your projects anytime.&lt;/p&gt;
   &lt;div class=&#34;projectBtn&#34;&gt;
-    &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/bee-movie-ipsum&#34;&gt;Link&lt;/a&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/bee-movie-ipsum/&#34;&gt;Link&lt;/a&gt;
     &lt;a class=&#34;projectBtn-link&#34; href=&#34;https://github.com/leo-generali/bee-movie-ipsum&#34;&gt;Github&lt;/a&gt;
   &lt;/div&gt;
 &lt;/div&gt;

@@ -25,7 +25,17 @@
 &lt;/div&gt;
 
 &lt;div class=&#34;projects&#34;&gt;
-  &lt;h3 class=&#34;project-title&#34;&gt;Guess the Color!&lt;/h3&gt;
+  &lt;h3 class=&#34;project-title&#34;&gt;Running Pace Calculator&lt;/h3&gt;
+  &lt;h4&gt;HTML, CSS, React&lt;/h4&gt;
+  &lt;p&gt;Created a single-page application designed with running athletes in mind. Built with React and Flexbox, this tool lets users quickly find the pace of their latest run. Users can switch between metric and imperial measurement systems at the press of a button.&lt;/p&gt;
+  &lt;div class=&#34;projectBtn&#34;&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;http://www.leogenerali.com/running-tool&#34;&gt;Link&lt;/a&gt;
+    &lt;a class=&#34;projectBtn-link&#34; href=&#34;https://github.com/leo-generali/running-tool/&#34;&gt;Github&lt;/a&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div class=&#34;projects&#34;&gt;
+  &lt;h3 class=&#34;project-title&#34;&gt;Film Facts&lt;/h3&gt;
   &lt;h4&gt;HTML, Skeleton, JavaScript&lt;/h4&gt;
   &lt;p&gt;Quickly find information about your favorite films and settle all those barroom bets with your friends. AJAX requests are used to obtain data courtesy of the &lt;a href=&#39;http://www.omdbapi.com/&#39;&gt;Open Movie Database&lt;/a&gt;.&lt;/p&gt;
   &lt;div class=&#34;projectBtn&#34;&gt;

@@ -11,7 +11,7 @@ body {
 	@include card(3, black);
 
 	background: $container-color;
-	border-radius: 2px;
+	border-radius: $common-border-radius;
 	padding: 2rem;
 	max-width: 960px;
 	margin: 0 auto;
@@ -23,10 +23,10 @@ body {
 
 .header::after { 
 	content: "";
-	background-color: $alt-color-one;
+	background-color: $tools-color;
 	width: 2rem;
     height: 2rem;
-    position: relative;
+    position: absolute;
     left: 0px;
     top: 0px;
 }
@@ -34,8 +34,79 @@ body {
 .intro-text {
 	margin: 5rem 0;
 	width: 55%;
-	
+
 	p {
 		margin: 5rem 0;
+	}
+}
+
+.project-card {
+	margin: 0 auto;
+	width: 70%;
+	display: flex;
+	border-radius: $common-border-radius;
+
+	@include card(4, black);
+}
+
+.project-card__pic {
+	max-height: 300px;
+	flex: 0 1 auto;
+
+	&--left {
+		clip-path: circle(100% at 0 50%);
+	}
+
+	&--right {
+		clip-path: circle(100% at 100% 50%);
+	}
+}
+
+.project-card-info {
+	flex: 1 1 auto;
+	margin: 0 2rem;
+
+	&__title {
+		margin: 1rem 0;
+		text-align: center;
+	}
+
+	&__description {
+	}
+
+	&__tools {
+		margin: 1rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		p {
+			border-radius: $common-border-radius;
+			color: $container-color;
+			background-color: $tools-color;
+			padding: 0.5rem;
+			margin: 0 1rem;
+		}
+	}
+
+	&__links {
+		font-size: 2.0rem;
+		margin: 1rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+
+		a {
+			border-radius: $common-border-radius;
+			color: $container-color;
+			background-color: $links-color;
+			padding: 0.5rem;
+			margin: 0 1rem;
+			text-decoration: none;
+		}
+
+		a:hover{
+			background-color: darken($links-color, 10%);
+		}
 	}
 }

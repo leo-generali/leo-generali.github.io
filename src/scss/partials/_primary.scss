@@ -86,7 +86,7 @@ body {
 			color: $container-color;
 			background-color: $tools-color;
 			padding: 1rem;
-			margin: 0 1rem;
+			margin: 0.2rem 1rem;
 		}
 	}
 
@@ -136,13 +136,13 @@ body {
 
 	.project-card {
 		margin: 10rem auto;
-		width: 80%;
+		width: 90%;
 		flex-direction: row;
 		border-radius: $common-border-radius;
 		&__pic {
 			width: 100%;
 			height: auto;
-			max-height: 300px;
+			max-height: 350px;
 			flex: 0 1 auto;
 			&--left {
 				clip-path: circle(100% at 0 50%);

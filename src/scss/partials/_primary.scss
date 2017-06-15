@@ -33,32 +33,31 @@ body {
 
 .intro-text {
 	margin: 5rem 0;
-	width: 55%;
 
 	p {
 		margin: 5rem 0;
 	}
 }
 
+.projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
 .project-card {
 	margin: 0 auto;
-	width: 70%;
+	width: 300px;
 	display: flex;
+	flex-direction: column;
 	border-radius: $common-border-radius;
 
 	@include card(4, black);
-}
 
-.project-card__pic {
-	max-height: 300px;
-	flex: 0 1 auto;
-
-	&--left {
-		clip-path: circle(100% at 0 50%);
-	}
-
-	&--right {
-		clip-path: circle(100% at 100% 50%);
+	&__pic {
+		align-self: center;
+		max-height: 300px;
+		flex: 0 1 auto;
 	}
 }
 
@@ -67,10 +66,7 @@ body {
 	margin: 0 2rem;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
-
-
-
+	justify-content: space-between;
 
 	&__title {
 		margin: 1rem 0;
@@ -114,6 +110,40 @@ body {
 
 		a:hover{
 			background-color: darken($links-color, 10%);
+		}
+	}
+}
+
+@media (min-width: 400px) {
+  .intro-text {
+    width: 55%;
+  }
+}
+
+@media (min-width: 950px) {
+
+	.projects {
+		display: block;
+	}
+
+	.project-card {
+		margin: 10rem auto;
+		width: 70%;
+		flex-direction: row;
+		border-radius: $common-border-radius;
+		&__pic{
+			width: 100%;
+			height: auto;
+			max-height: 300px;
+			flex: 0 1 auto;
+			&--left {
+				clip-path: circle(100% at 0 50%);
+			}
+
+			&--right {
+				clip-path: circle(100% at 100% 50%);
+				order: 1;
+			}
 		}
 	}
 }

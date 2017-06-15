@@ -1,4 +1,41 @@
+body {
+	color: $text-color;
+}
+
 .container {
 	background: $background-color;
-	height: 100vh;
+	padding: 2rem;
+}
+
+.card {
+	@include card(3, black);
+
+	background: $container-color;
+	border-radius: 2px;
+	padding: 2rem;
+	max-width: 960px;
+	margin: 0 auto;
+}
+
+.header {
+	
+}
+
+.header::after { 
+	content: "";
+	background-color: $alt-color-one;
+	width: 2rem;
+    height: 2rem;
+    position: relative;
+    left: 0px;
+    top: 0px;
+}
+
+.intro-text {
+	margin: 5rem 0;
+	width: 55%;
+	
+	p {
+		margin: 5rem 0;
+	}
 }

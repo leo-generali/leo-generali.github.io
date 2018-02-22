@@ -2,6 +2,8 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
+import Navigation from '../components/Navigation'
+
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 const colors = {
@@ -13,7 +15,7 @@ injectGlobal`
   body {
     border-top: 8px solid ${colors.primaryColor};
   }
-`
+`;
 
 const Container = styled.div`
   margin:      0 auto;
@@ -31,8 +33,11 @@ const TemplateWrapper = ({ children }) => (
       ]}
     />
     <ThemeProvider theme={colors}>
-      {children()}
+      <Navigation />
     </ThemeProvider>
+    <ThemeProvider theme={colors}>
+      {children()}
+      </ThemeProvider>
   </Container>
 )
 

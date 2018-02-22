@@ -1,18 +1,16 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
+import StyledLink from '../StyledLink'
+
 import styled from 'styled-components';
+
+// To add back in once the blog post has been written.
+// <Link className="project-link project-link--post" to="/better-gradient-tool">About</Link>
 
 const Title = styled.p`
   font-weight: 600;
 `;
-
-const ProjectLink = styled.a`
-  margin-right: 10px;
-`;
-
-// To add back in once the blog post has been written.
-// <Link className="project-link project-link--post" to="/better-gradient-tool">About</Link>
 
 const projects = [
   {
@@ -36,8 +34,8 @@ const Projects = () => (
               <p>{project.description}</p>
             </div>
             <div>
-              <ProjectLink href={project.liveLink}>Live</ProjectLink>
-              <ProjectLink href={project.liveLink}>Github</ProjectLink>
+              <StyledLink project href={project.liveLink} text='Live' />
+              <StyledLink href={project.liveLink} text='GitHub' />
             </div>
           </div>
         );

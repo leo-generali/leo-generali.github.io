@@ -13,6 +13,7 @@ const fadeIn = keyframes`
 
 const Anchor = styled.a`
   font-weight: 600;
+  margin-right: ${props => props.project ? '10px' : ''};
 
   :hover {
     animation: ${fadeIn} 4s infinite;
@@ -20,8 +21,8 @@ const Anchor = styled.a`
   }
 `;
 
-const StyledLink = ({ href, text }) => (
-  <Anchor href={href}>{text}</Anchor>
+const StyledLink = ({ project, href, text }) => (
+  <Anchor project={project} href={href}>{text}</Anchor>
 )
 
 export default StyledLink;

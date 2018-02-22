@@ -7,7 +7,6 @@ githubTheme.overrideThemeStyles = (options) => ({
     marginTop: '0',
     borderBottom: 'none'
   },
-
   'a': {
     color: '#1E3799'
   }

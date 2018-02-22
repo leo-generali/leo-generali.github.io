@@ -3,10 +3,16 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 
 import Header from '../components/Header'
-import './index.css'
+
+import styled from 'styled-components';
+
+const Container = styled.div`
+  margin: 0 auto;
+  max-width: 700px;
+`;
 
 const TemplateWrapper = ({ children }) => (
-  <div>
+  <Container>
     <Helmet
       title='Leo Generali | Front End Developer'
       meta={[
@@ -18,7 +24,7 @@ const TemplateWrapper = ({ children }) => (
     <div>
       {children()}
     </div>
-  </div>
+  </Container>
 )
 
 TemplateWrapper.propTypes = {

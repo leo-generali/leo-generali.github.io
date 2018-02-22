@@ -1,14 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-
-import Header from '../components/Header'
-
 import styled from 'styled-components';
 
 const Container = styled.div`
-  margin: 0 auto;
-  max-width: 700px;
+  margin:      0 auto;
+  max-width:   960px;
+  padding: 50px 20px 0;
 `;
 
 const TemplateWrapper = ({ children }) => (
@@ -16,11 +14,10 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title='Leo Generali | Front End Developer'
       meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
+        { name: 'description', content: 'Leo Generali is a Front End Developer in Washington DC. He creates thoughtfully designed web experiences with JavaScript and Rails.' },
+        { name: 'keywords', content: 'front-end, javascript, css, sass, washington dc, ui, ux, react, redux, gatsby, rails' },
       ]}
     />
-    <Header />
     <div>
       {children()}
     </div>

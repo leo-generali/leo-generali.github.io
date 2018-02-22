@@ -1,35 +1,49 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
-import styled from 'styled-components';
+import Projects from '../components/Projects'
+import StyledLink from '../components/StyledLink'
+
+import styled, { keyframes } from 'styled-components'
+
+const fadeIn = keyframes`
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px)
+  }
+`;
 
 const Container = styled.div`
   max-width: 600px;
 `;
 
-const Intro = styled.section`
-
+const Section = styled.section`
+  margin-bottom: 30px;
+  animation: ${fadeIn} ${props => props.delay} ease-in-out;
 `;
 
-const Hello = styled.span`
-  display: block;
-  margin-bottom: 20px;
+const HelloText = Section.extend`
+  color: ${props => props.theme.primaryColor};
 `;
-
-
-
 
 const IndexPage = () => (
   <Container>
-    <section >
+    <HelloText delay='0.15s'>
         <h1>Hey! 👋</h1>
-        <h1>I'm Leo, a Front End Developer in Washington, DC. I like to build cool things with JavaScript, CSS, and HTML.</h1>
-    </section>
-    <section >
-      <p>I'm currently working on a variety of Front End projects over at <a href='https://www.weddingwire.com/'>WeddingWire</a>. If you want to get in touch with me, you can find me on <a className='link link__body' href='https://twitter.com/itsLeeOhGee'>Twitter</a>, <a href='https://www.linkedin.com/in/leogenerali/' className='link link__body'>LinkedIn</a>, or <a href='https://github.com/leo-generali' className='link link__body'>Github</a>. If you want to say hello, you can email me <a href='mailto:me@leogenerali.com?Subject=Hello!' className='link link__body'>here</a>.</p>
-      <p>If I'm not coding, I'm probably out running. I try and post all of my runs on Strava. If that sounds like your type of thing, you can check that out over <a href='https://www.strava.com/athletes/11876587' className='link link__body'>here</a>.</p>
-    </section>
-    {/* <Projects /> */}
+        <h1>I'm Leo, a Front End Developer in Washington, DC.</h1>
+    </HelloText>
+    <Section delay='0.25s'>
+      <p>I'm currently working on a variety of Front End projects over at <StyledLink href='https://www.weddingwire.com/' text='WeddingWire'/>. If you want to get in touch with me, you can find me on <StyledLink href='https://twitter.com/itsLeeOhGee' text='Twitter' />, <StyledLink href='https://www.linkedin.com/in/leogenerali/' text='LinkedIn' />, or <StyledLink href='https://github.com/leo-generali' text='Github' />. If you want to say hello, you can email me <StyledLink href='mailto:me@leogenerali.com?Subject=Hello!' text='here' />.</p>
+      <p>If I'm not coding, I'm probably out running. I try and post all of my runs on Strava. If that sounds like your type of thing, you can check that out over <StyledLink href='https://www.strava.com/athletes/11876587' text='here' />.</p>
+    </Section>
+    <Section delay='0.25s'>
+      <p>I also enjoy building tools that solve problems. I get to help others out, and I learn a thing or two in the process. Here are some of the cooler things I've made:</p>
+      <Projects />
+    </Section>
   </Container>
 )
 

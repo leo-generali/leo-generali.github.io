@@ -1,16 +1,28 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import styled from 'styled-components';
+
+import styled, { ThemeProvider, injectGlobal } from 'styled-components';
+
+const colors = {
+  primaryColor: '#E55039',
+  linkColor: '#1E3799'
+};
+
+injectGlobal`
+  body {
+    border-top: 8px solid ${colors.primaryColor};
+  }
+`
 
 const Container = styled.div`
   margin:      0 auto;
   max-width:   960px;
-  padding: 50px 20px 0;
+  padding: 100px 20px 0;
 `;
 
 const TemplateWrapper = ({ children }) => (
-  <Container>
+  <Container >
     <Helmet
       title='Leo Generali | Front End Developer'
       meta={[
@@ -18,9 +30,9 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'front-end, javascript, css, sass, washington dc, ui, ux, react, redux, gatsby, rails' },
       ]}
     />
-    <div>
+    <ThemeProvider theme={colors}>
       {children()}
-    </div>
+    </ThemeProvider>
   </Container>
 )
 

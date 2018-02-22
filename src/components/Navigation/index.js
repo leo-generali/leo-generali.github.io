@@ -12,8 +12,10 @@ const StyledNavLink = styled(Link)`
   margin-left: 20px;
   font-weight: 600;
   color: ${props => props.theme.linkColor};
+  transition: 0.2s;
 
   :hover {
+    color: ${props => props.theme.linkHover};
     text-decoration: none;
   }
 `;

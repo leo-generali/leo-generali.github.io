@@ -1,9 +1,29 @@
-import React from 'react'
+import React from "react";
+import PostLink from "../components/PostLink";
 
-const Writing = () => (
-  <div>
-    <h1>Damn you're good! How'd you find this place?</h1>
-  </div>
-)
+const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
+  const Posts = edges
+    .filter(edge => !!edge.node.frontmatter.date) // You can filter your posts based on some criteria
+    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
+  return <div>{Posts}</div>;
+};
 
-export default Writing
+export default Writing;
+
+export const pageQuery = graphql`
+  query IndexQuery {
+    allMarkdownRemark(sort: { order: DESC, fields: [frontmatter___date] }) {
+      edges {
+        node {
+          id
+          excerpt(pruneLength: 250)
+          frontmatter {
+            date(formatString: "MMMM DD, YYYY")
+            path
+            title
+          }
+        }
+      }
+    }
+  }
+`;

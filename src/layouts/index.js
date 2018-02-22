@@ -8,7 +8,8 @@ import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 
 const colors = {
   primaryColor: '#E55039',
-  linkColor: '#1E3799'
+  linkColor: '#6772E5',
+  linkHover: '#292D5B'
 };
 
 injectGlobal`

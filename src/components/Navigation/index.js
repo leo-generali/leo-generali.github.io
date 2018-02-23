@@ -3,7 +3,17 @@ import Link from 'gatsby-link';
 
 import { colors } from '../../utils/style';
 
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+`;
 
 const Nav = styled.nav`
   display: flex;
@@ -15,26 +25,64 @@ const Nav = styled.nav`
   }
 `;
 
-const StyledNavLink = styled(Link)`
+const activeClassName = 'active';
+
+const StyledNavLink = styled(Link).attrs({
+  activeClassName
+})`
   margin: 0 20px 0 0;
   font-weight: 600;
   color: ${colors.linkColor};
   transition: 0.2s;
+  position: relative;
 
   :hover {
     color: ${colors.linkHover};
     text-decoration: none;
   }
 
+  :after {
+    content: '';
+    border-bottom: 2px dotted #EEE;
+    width: 100%;
+    height: 10%;
+    /* background-color: #; */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
   @media (min-width: 600px) {
     margin: 0 0 0 20px;
+  }
+
+  &.${activeClassName} {
+
+    :after {
+      animation-name: ${fadeIn};
+      animation-duration: 0.2s;
+      animation-timing-function: ease-in-out;
+      animation-delay: 0;
+      animation-iteration-count: 1;
+      animation-direction: normal;
+      content: '';
+      width: 100%;
+      height: 10%;
+      border-bottom: 2px dotted ${colors.linkColor};
+      /* background-color: #; */
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: -1;
+    }
   }
 `;
 
 const Projects = () => (
   <Nav>
-    <StyledNavLink to="/">🏠 Home</StyledNavLink>
-    <StyledNavLink to="/writing">📕 Writing</StyledNavLink>
+    <StyledNavLink exact to="/">🏠 Home</StyledNavLink>
+    <StyledNavLink exact to="/writing">📕 Writing</StyledNavLink>
   </Nav>
 )
 

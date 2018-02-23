@@ -34,7 +34,7 @@ const StyledNavLink = styled(Link)`
 const Projects = () => (
   <Nav>
     <StyledNavLink to="/">🏠 Home</StyledNavLink>
-    {/* <StyledNavLink to="/writing">📕 Writing</StyledNavLink> */}
+    <StyledNavLink to="/writing">📕 Writing</StyledNavLink>
   </Nav>
 )
 

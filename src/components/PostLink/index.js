@@ -1,23 +1,29 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import { colors } from '../../utils/style'
+
 import styled from 'styled-components'
 
 const StyledPostLink = styled(Link)`
-  display: flex;
-  justify-content: space-between;
+  display: inline-flex;
   align-items: center;
   font-weight: 600;
-  color: ${props => props.theme.linkColor};
+  color: ${props => colors.linkColor};
   transition: 0.2s;
+  margin-bottom: 10px;
 
   :hover {
-    color: ${props => props.theme.linkHover};
+    color: ${props => colors.linkHover};
     text-decoration: none;
   }
 `;
 
-const Title = styled.span`
+const Emoji = styled.span`
+  margin-right: 10px;
+`;
+
+const Title = Emoji.extend`
 
 `;
 
@@ -31,6 +37,7 @@ const Date = styled.span`
 
 const PostLink = ({ post }) => (
   <StyledPostLink to={post.frontmatter.path}>
+    <Emoji>{post.frontmatter.emoji}</Emoji>
     <Title>{post.frontmatter.title}</Title>
     <Date>{post.frontmatter.date}</Date>
   </StyledPostLink>

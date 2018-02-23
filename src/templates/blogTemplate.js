@@ -9,7 +9,7 @@ const Post = styled.main`
 `;
 
 const Title = styled.h1`
-  color: ${props => colors.primaryColor};
+  color: ${colors.primaryColor};
 `;
 
 const Date = styled.h2`

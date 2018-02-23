@@ -1,20 +1,9 @@
 import React from "react";
 import PostLink from "../components/PostLink";
 
-import { styling, colors, transition } from '../utils/style'
+import { styling, colors, transition, fadeIn } from '../utils/style'
 
 import styled, { keyframes } from 'styled-components'
-
-const fadeIn = keyframes`
-  0% {
-    opacity: 0;
-    transform: translateY(10px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0px)
-  }
-`;
 
 const Section = styled.div`
   animation: ${fadeIn} ${props => props.delay} ease-in-out;
@@ -23,7 +12,7 @@ const Section = styled.div`
 const Year = styled.h3`
   font-weight: 600;
   padding-left: 10px;
-  border-left: 4px solid ${props => colors.primaryColor};
+  border-left: 4px solid ${colors.primaryColor};
 `;
 
 const Posts = styled.div`

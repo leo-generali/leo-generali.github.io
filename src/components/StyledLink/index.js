@@ -3,14 +3,16 @@ import Link from 'gatsby-link'
 
 import styled from 'styled-components'
 
+import { colors } from '../../utils/style'
+
 const Anchor = styled.a`
   font-weight: 600;
-  color: ${props => props.theme.linkColor};
+  color: ${props => colors.linkColor};
   margin-right: ${props => props.project ? '10px' : ''};
   transition: 0.2s;
 
   :hover {
-    color: ${props => props.theme.linkHover};
+    color: ${props => colors.linkHover};
     text-decoration: none;
   }
 `;

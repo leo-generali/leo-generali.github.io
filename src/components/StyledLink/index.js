@@ -7,12 +7,12 @@ import { colors } from '../../utils/style'
 
 const Anchor = styled.a`
   font-weight: 600;
-  color: ${props => colors.linkColor};
+  color: ${colors.linkColor};
   margin-right: ${props => props.project ? '10px' : ''};
   transition: 0.2s;
 
   :hover {
-    color: ${props => colors.linkHover};
+    color: ${colors.linkHover};
     text-decoration: none;
   }
 `;

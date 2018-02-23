@@ -7,10 +7,12 @@ import styled, { keyframes } from 'styled-components';
 
 const fadeIn = keyframes`
   from {
+    transform: translateY(0px);
     opacity: 0;
   }
 
   to {
+    transform: translateY(2px);
     opacity: 1;
   }
 `;
@@ -60,17 +62,17 @@ const StyledNavLink = styled(Link).attrs({
   &.${activeClassName} {
 
     :after {
+      animation-timing-function: ease-in-out;
       animation-name: ${fadeIn};
       animation-duration: 0.2s;
-      animation-timing-function: ease-in-out;
-      animation-delay: 0;
+      animation-delay: none;
       animation-iteration-count: 1;
       animation-direction: normal;
+      transform: translateY(2px);
       content: '';
       width: 100%;
       height: 10%;
       border-bottom: 2px dotted ${colors.linkColor};
-      /* background-color: #; */
       position: absolute;
       left: 0;
       bottom: 0;

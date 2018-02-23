@@ -10,7 +10,7 @@ export const transition = {
 
 export const colors = {
   backgroundColor: '#FDFFFC',
-  primaryColor: '#3b5998',
-  linkColor: '#ff7040',
-  linkHover: '#b2313c',
+  primaryColor: '#2E69E6;',
+  linkColor: '#FF7040',
+  linkHover: '#B2313C',
 }

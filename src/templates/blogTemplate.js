@@ -28,7 +28,7 @@ export default function Template({
   const { frontmatter, html } = markdownRemark;
   return (
     <Post>
-      <Title >{frontmatter.title}</Title>
+      <Title>{frontmatter.title}</Title>
       <Date>{frontmatter.date}</Date>
       <Body dangerouslySetInnerHTML={{ __html: html }} />
     </Post>

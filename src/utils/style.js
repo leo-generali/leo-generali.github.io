@@ -9,10 +9,8 @@ export const transition = {
 }
 
 export const colors = {
-  backgroundColor: '#fdfffc',
-  primaryColor: '#1e90ff',
-  altColor: '#41ead4',
-  linkColor: '#f71735',
+  backgroundColor: '#FDFFFC',
+  primaryColor: '#3b5998',
+  linkColor: '#ff7040',
   linkHover: '#b2313c',
-  darkColor: '#011627'
 }

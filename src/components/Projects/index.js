@@ -5,8 +5,24 @@ import StyledLink from '../StyledLink'
 
 import styled from 'styled-components';
 
+import { colors } from '../../utils/style'
+
+const projectColors = {
+  red: '#a55eea'
+}
+
 // To add back in once the blog post has been written.
 // <Link className="project-link project-link--post" to="/better-gradient-tool">About</Link>
+
+const Project = styled.div`
+
+`;
+
+const Description = styled.p`
+  color: #818080;
+  padding: 0 0 0 20px;
+  border-left: 5px solid #818080;
+`;
 
 const Title = styled.p`
   font-weight: 600;
@@ -28,16 +44,16 @@ const Projects = () => (
     {
       projects.map(project => {
         return (
-          <div key={project.id}>
-            <Title>{project.title}</Title>
+          <Project key={project.id}>
             <div>
-              <p>{project.description}</p>
+              <Title>{project.title}</Title>
             </div>
             <div>
-              <StyledLink project href={project.liveLink} text='Live' />
-              <StyledLink href={project.liveLink} text='GitHub' />
+              <Description>{project.description}</Description>
             </div>
-          </div>
+            <StyledLink project href={project.liveLink} text='Live' />
+            <StyledLink project href={project.ghLink} text='GitHub' />
+          </Project>
         );
       })
     }

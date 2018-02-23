@@ -9,6 +9,7 @@ import { colors } from '../utils/style'
 
 injectGlobal`
   body {
+    background-color: ${colors.backgroundColor};
     border-top: 8px solid ${colors.primaryColor};
   }
 `;

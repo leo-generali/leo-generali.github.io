@@ -18,11 +18,11 @@ const Nav = styled.nav`
 const StyledNavLink = styled(Link)`
   margin: 0 20px 0 0;
   font-weight: 600;
-  color: ${props => colors.linkColor};
+  color: ${colors.linkColor};
   transition: 0.2s;
 
   :hover {
-    color: ${props => colors.linkHover};
+    color: ${colors.linkHover};
     text-decoration: none;
   }
 

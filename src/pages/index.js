@@ -29,7 +29,7 @@ const Section = styled.section`
 `;
 
 const HelloText = Section.extend`
-  color: ${props => colors.primaryColor};
+  color: ${colors.primaryColor};
 `;
 
 const IndexPage = () => (

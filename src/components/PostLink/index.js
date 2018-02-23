@@ -9,12 +9,12 @@ const StyledPostLink = styled(Link)`
   display: inline-flex;
   align-items: center;
   font-weight: 600;
-  color: ${props => colors.linkColor};
+  color: ${colors.linkColor};
   transition: 0.2s;
   margin-bottom: 10px;
 
   :hover {
-    color: ${props => colors.linkHover};
+    color: ${colors.linkHover};
     text-decoration: none;
   }
 `;

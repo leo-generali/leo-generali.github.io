@@ -1,5 +1,6 @@
 import { keyframes } from 'styled-components';
 
+// Maybe eventually I'll get this working! 🙁
 export const fadeIn = keyframes`
   from {
     opacity: 0;
@@ -16,14 +17,15 @@ export const styling = {
 };
 
 export const transition = {
-  fast: '0.1s',
-  medium: '0.175s',
-  slow: '0.25s',
+  fast: '0.25s',
+  medium: '0.4s',
+  slow: '0.7s',
+  superSlow: '1s'
 };
 
 export const colors = {
   backgroundColor: '#FDFFFC',
   primaryColor: '#2E69E6;',
   linkColor: '#FF7040',
-  linkHover: '#B2313C',
+  linkHover: '#B2313C'
 };

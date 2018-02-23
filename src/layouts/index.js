@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Helmet from 'react-helmet'
+import React from 'react';
+import PropTypes from 'prop-types';
+import Helmet from 'react-helmet';
 
-import Navigation from '../components/Navigation'
+import Navigation from '../components/Navigation';
 
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-import { colors } from '../utils/style'
+import { colors } from '../utils/style';
 
 injectGlobal`
   body {
@@ -38,4 +38,4 @@ TemplateWrapper.propTypes = {
   children: PropTypes.func,
 }
 
-export default TemplateWrapper
+export default TemplateWrapper;

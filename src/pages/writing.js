@@ -1,13 +1,11 @@
 import React from "react";
 import PostLink from "../components/PostLink";
 
-import { styling, colors, transition, fadeIn } from '../utils/style'
+import { styling, colors, transition } from '../utils/style'
 
 import styled, { keyframes } from 'styled-components'
 
-const Section = styled.div`
-  animation: ${fadeIn} ${props => props.delay} ease-in-out;
-`;
+const Section = styled.div``;
 
 const Year = styled.h3`
   font-weight: 600;

@@ -1,9 +1,9 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import { colors } from '../../utils/style'
+import { colors } from '../../utils/style';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const StyledPostLink = styled(Link)`
   display: inline-flex;

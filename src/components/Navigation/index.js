@@ -1,9 +1,9 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Link from 'gatsby-link';
 
-import { colors } from '../../utils/style'
+import { colors } from '../../utils/style';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 
 const Nav = styled.nav`
   display: flex;
@@ -33,7 +33,7 @@ const StyledNavLink = styled(Link)`
 
 const Projects = () => (
   <Nav>
-    <StyledNavLink to="/">Home</StyledNavLink>
+    <StyledNavLink to="/">🏠 Home</StyledNavLink>
     {/* <StyledNavLink to="/writing">📕 Writing</StyledNavLink> */}
   </Nav>
 )

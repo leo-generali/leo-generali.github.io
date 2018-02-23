@@ -1,22 +1,33 @@
 import React from 'react';
 import Link from 'gatsby-link';
 
-import styled from 'styled-components';
+import { colors } from '../../utils/style'
+
+import styled from 'styled-components'
 
 const Nav = styled.nav`
   display: flex;
-  justify-content: flex-end;
+  margin-bottom: 30px;
+
+  @media (min-width: 600px) {
+    justify-content: flex-end;
+    margin-bottom: 0;
+  }
 `;
 
 const StyledNavLink = styled(Link)`
-  margin-left: 20px;
+  margin: 0 20px 0 0;
   font-weight: 600;
-  color: ${props => props.theme.linkColor};
+  color: ${props => colors.linkColor};
   transition: 0.2s;
 
   :hover {
-    color: ${props => props.theme.linkHover};
+    color: ${props => colors.linkHover};
     text-decoration: none;
+  }
+
+  @media (min-width: 600px) {
+    margin: 0 0 0 20px;
   }
 `;
 

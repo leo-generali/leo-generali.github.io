@@ -15,7 +15,7 @@ const fadeIn = keyframes`
   }
   100% {
     opacity: 1;
-    transform: translateY(0px)
+    transform: translateY(0px);
   }
 `;
 

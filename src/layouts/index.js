@@ -5,12 +5,7 @@ import Helmet from 'react-helmet'
 import Navigation from '../components/Navigation'
 
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
-
-const colors = {
-  primaryColor: '#E55039',
-  linkColor: '#6772E5',
-  linkHover: '#292D5B'
-};
+import { colors } from '../utils/style'
 
 injectGlobal`
   body {
@@ -19,9 +14,9 @@ injectGlobal`
 `;
 
 const Container = styled.div`
-  margin:      0 auto;
-  max-width:   960px;
-  padding: 100px 20px 0;
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 100px 40px 0;
 `;
 
 const TemplateWrapper = ({ children }) => (
@@ -33,12 +28,8 @@ const TemplateWrapper = ({ children }) => (
         { name: 'keywords', content: 'front-end, javascript, css, sass, washington dc, ui, ux, react, redux, gatsby, rails' },
       ]}
     />
-    <ThemeProvider theme={colors}>
-      <Navigation />
-    </ThemeProvider>
-    <ThemeProvider theme={colors}>
-      {children()}
-      </ThemeProvider>
+    <Navigation />
+    {children()}
   </Container>
 )
 

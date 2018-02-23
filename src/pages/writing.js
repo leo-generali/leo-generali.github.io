@@ -1,11 +1,10 @@
 import React from "react";
 import PostLink from "../components/PostLink";
 
-import { styling, colors, transition } from '../utils/style'
+import { styling, colors, delay } from '../utils/style'
+import { Section } from '../utils/shared';
 
 import styled, { keyframes } from 'styled-components'
-
-const Section = styled.div``;
 
 const Year = styled.h3`
   font-weight: 600;
@@ -30,7 +29,7 @@ const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
 
   return (
     <Posts>
-      <Section delay={transition.fast}>
+      <Section delay={delay.fast}>
         <Year>2018</Year>
         {Post2018}
       </Section>

@@ -62,13 +62,8 @@ const StyledNavLink = styled(Link).attrs({
   &.${activeClassName} {
 
     :after {
-      animation-timing-function: ease-in-out;
-      animation-name: ${fadeIn};
-      animation-duration: 0.2s;
-      animation-delay: none;
-      animation-iteration-count: 1;
-      animation-direction: normal;
-      transform: translateY(2px);
+      transition: 0.2s;
+      transform: translateY(1px);
       content: '';
       width: 100%;
       height: 10%;

@@ -1,4 +1,5 @@
-import styled, { keyframes } from 'styled-components';
+import styled, { keyframes, css } from 'styled-components';
+import { colors } from './style.js';
 
 export const fadeIn = keyframes`
   from {
@@ -21,5 +22,19 @@ export const Section = styled.section`
   animation-iteration-count: 1;
   animation-direction: normal;
 `;
+
+export const AnchorStyle = css`
+  font-weight: 600;
+  color: ${ colors.linkColor };
+  margin-right: ${ props => props.project ? '10px' : '' };
+  transition: 0.2s;
+  border-bottom: 1px dotted ${ colors.linkColor };
+
+  :hover {
+    color: ${ colors.linkHover };
+    text-decoration: none;
+    border-bottom: 1px dotted ${ colors.linkHover };
+  }
+`
 
 

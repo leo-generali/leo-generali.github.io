@@ -23,7 +23,6 @@ const Nav = styled.nav`
 
   @media (min-width: 600px) {
     justify-content: flex-end;
-    margin-bottom: 0;
   }
 `;
 
@@ -48,7 +47,6 @@ const StyledNavLink = styled(Link).attrs({
     border-bottom: 2px dotted #EEE;
     width: 100%;
     height: 10%;
-    /* background-color: #; */
     position: absolute;
     left: 0;
     bottom: 0;
@@ -79,7 +77,7 @@ const StyledNavLink = styled(Link).attrs({
 const Projects = () => (
   <Nav>
     <StyledNavLink exact to="/">🏠 Home</StyledNavLink>
-    <StyledNavLink exact to="/writing">📕 Writing</StyledNavLink>
+    <StyledNavLink to="/writing">📕 Writing</StyledNavLink>
   </Nav>
 )
 

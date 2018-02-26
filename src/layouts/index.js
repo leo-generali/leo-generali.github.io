@@ -12,6 +12,27 @@ injectGlobal`
     background-color: ${colors.backgroundColor};
     border-top: 8px solid ${colors.primaryColor};
   }
+
+  ::selection {
+    color: ${colors.backgroundColor};
+    background-color: ${colors.linkColor};
+  }
+
+  ::-moz-selection {
+    color: ${colors.backgroundColor};
+    background-color: ${colors.linkColor};
+  }
+
+  pre {
+    overflow-y: auto;
+  }
+
+  code {
+    background-color: hsla(50, 100%, 60%, 0.2);
+    border-radius: 3px;
+    font-family: 'SFMono-Regular', Consolas,'Roboto Mono','Droid Sans Mono','Liberation Mono',Menlo,Courier,monospace;
+    padding: 0.2em;
+  }
 `;
 
 const Container = styled.div`

@@ -74,10 +74,22 @@ const StyledNavLink = styled(Link).attrs({
   }
 `;
 
+const NavEmoji = styled.span`
+  display: none;
+
+  @media (min-width: 600px) {
+    display: inline;
+  }
+`;
+
 const Projects = () => (
   <Nav>
-    <StyledNavLink exact to="/">🏠 Home</StyledNavLink>
-    <StyledNavLink to="/writing">📕 Writing</StyledNavLink>
+    <StyledNavLink exact to="/">
+      <NavEmoji>🏠 </NavEmoji>Home
+    </StyledNavLink>
+    <StyledNavLink to="/writing">
+      <NavEmoji>📕 </NavEmoji>Writing
+    </StyledNavLink>
   </Nav>
 )
 

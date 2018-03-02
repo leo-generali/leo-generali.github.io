@@ -2,7 +2,7 @@ import React from "react";
 import PostLink from "../components/PostLink";
 
 import { styling, colors, delay } from '../utils/style'
-import { Section } from '../utils/shared';
+import { Section, Container } from '../utils/shared';
 
 import styled, { keyframes } from 'styled-components'
 
@@ -10,10 +10,6 @@ const Year = styled.h3`
   font-weight: 600;
   padding-left: 10px;
   border-left: 4px solid ${colors.primaryColor};
-`;
-
-const Posts = styled.div`
-  max-width: ${styling.maxWidth};
 `;
 
 const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
@@ -28,12 +24,12 @@ const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
     .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
 
   return (
-    <Posts>
+    <Container>
       <Section delay={delay.fast}>
         <Year>2018</Year>
         {Post2018}
       </Section>
-    </Posts>
+    </Container>
   );
 };
 

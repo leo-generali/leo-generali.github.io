@@ -1,5 +1,5 @@
 import styled, { keyframes, css } from 'styled-components';
-import { colors } from './style.js';
+import { styling, colors } from './style.js';
 
 export const fadeIn = keyframes`
   from {
@@ -35,6 +35,13 @@ export const AnchorStyle = css`
     text-decoration: none;
     border-bottom: 1px dotted ${ colors.linkHover };
   }
-`
+`;
+
+export const Container = styled.div`
+  margin: 0 auto;
+  max-width: ${styling.maxWidth};
+`;
+
+
 
 

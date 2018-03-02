@@ -3,11 +3,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { styling, colors } from '../utils/style';
-import { AnchorStyle } from '../utils/shared';
+import { AnchorStyle, Container } from '../utils/shared';
 
-const Post = styled.main`
-  max-width: ${styling.maxWidth};
-
+const Post = Container.extend`
   a {
     ${ AnchorStyle }
   }

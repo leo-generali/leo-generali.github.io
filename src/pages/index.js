@@ -5,13 +5,9 @@ import Projects from '../components/Projects';
 import StyledLink from '../components/StyledLink';
 
 import { styling, colors, delay } from '../utils/style';
-import { Section } from '../utils/shared';
+import { Section, Container } from '../utils/shared';
 
 import styled, { keyframes } from 'styled-components';
-
-const Container = styled.div`
-  max-width: ${styling.maxWidth};
-`;
 
 const HelloText = Section.extend`
   color: ${colors.primaryColor};

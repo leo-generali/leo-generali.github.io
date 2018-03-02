@@ -18,9 +18,24 @@ module.exports = {
         name: 'markdown-pages',
       },
     },
-    'gatsby-transformer-remark',
     {
-      resolve: `gatsby-plugin-google-analytics`,
+      resolve: 'gatsby-transformer-remark',
+      options: {
+        plugins: [
+          'gatsby-plugin-sharp',
+          {
+            resolve: 'gatsby-remark-images',
+            options: {
+              maxWidth: 600,
+              linkImagesToOriginal: false,
+              wrapperStyle: 'margin: 30px 0;'
+            },
+          },
+        ],
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-google-analytics',
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS,
         // Puts tracking script in the head instead of the body

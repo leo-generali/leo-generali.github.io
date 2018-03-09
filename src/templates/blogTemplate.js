@@ -10,9 +10,14 @@ const Post = Container.extend`
     ${ AnchorStyle }
   }
 
+  p > img {
+    display: block;
+    margin: 0 auto;
+  }
+
   h3 {
     position: relative;
-    margin-bottom: 1.25rem;
+    margin: 1.5rem 0 1.25rem;
 
     :after {
       content: '';
@@ -36,6 +41,7 @@ const Body = styled.div``;
 
 
 export default function Template({ data }) {
+  console.log(data);
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
   return (

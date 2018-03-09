@@ -31,6 +31,7 @@ module.exports = {
               wrapperStyle: 'margin: 30px 0;'
             },
           },
+          'gatsby-remark-copy-linked-files'
         ],
       },
     },

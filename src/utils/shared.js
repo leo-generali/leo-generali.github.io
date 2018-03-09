@@ -38,7 +38,6 @@ export const AnchorStyle = css`
 `;
 
 export const Container = styled.div`
-  margin: 0 auto;
   max-width: ${styling.maxWidth};
 `;
 

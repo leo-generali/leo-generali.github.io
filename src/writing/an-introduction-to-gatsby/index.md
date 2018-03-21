@@ -1,8 +1,8 @@
 ---
-path: /writing/an-introduction-to-gatsby
-date: 2018-02-23
-emoji: ⚛
-title: An Introduction to Gatsby
+path: "/writing/an-introduction-to-gatsby"
+date: "2018-02-23"
+emoji: "⚛"
+title: "An Introduction to Gatsby"
 ---
 
 ![Leonardo DiCaprio as Gatsby from Great Gatsby](./images/leonardo.jpg)

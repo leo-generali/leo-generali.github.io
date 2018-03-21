@@ -5,18 +5,6 @@ import { colors } from '../../utils/style';
 
 import styled, { keyframes } from 'styled-components';
 
-const fadeIn = keyframes`
-  from {
-    transform: translateY(0px);
-    opacity: 0;
-  }
-
-  to {
-    transform: translateY(2px);
-    opacity: 1;
-  }
-`;
-
 const Nav = styled.nav`
   display: flex;
   margin-bottom: 30px;
@@ -82,7 +70,7 @@ const NavEmoji = styled.span`
   }
 `;
 
-const Projects = () => (
+const Navigation = () => (
   <Nav>
     <StyledNavLink exact to="/">
       <NavEmoji>🏠 </NavEmoji>Home
@@ -91,6 +79,6 @@ const Projects = () => (
       <NavEmoji>📕 </NavEmoji>Writing
     </StyledNavLink>
   </Nav>
-)
+);
 
-export default Projects;
+export default Navigation;

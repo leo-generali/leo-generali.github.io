@@ -30,7 +30,7 @@ injectGlobal`
   code {
     background-color: hsla(50, 100%, 60%, 0.2);
     border-radius: 3px;
-    font-family: 'SFMono-Regular', Consolas,'Roboto Mono','Droid Sans Mono','Liberation Mono',Menlo,Courier,monospace;
+    font-family: 'SFMono-Regular', Consolas, 'Roboto Mono','Droid Sans Mono','Liberation Mono',Menlo,Courier,monospace;
     padding: 0.2em;
   }
 `;
@@ -38,7 +38,7 @@ injectGlobal`
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 100px 40px 0;
+  padding: 100px 40px;
 `;
 
 const TemplateWrapper = ({ children }) => (

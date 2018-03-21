@@ -19,7 +19,7 @@ const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
   console.log(postsToFilter)
   return (
     <Container>
-      <Section delay={delay.fast}>
+      <Section>
         <Year>2018</Year>
         {postsToFilter}
       </Section>

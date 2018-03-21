@@ -41,8 +41,7 @@ const Date = styled.h3`
 
 const Body = styled.div``;
 
-
-export default function Template({ data }){
+function Template({ data }) {
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
 
@@ -54,6 +53,8 @@ export default function Template({ data }){
     </Post>
   );
 };
+
+export default Template;
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {

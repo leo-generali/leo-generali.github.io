@@ -29,7 +29,11 @@ injectGlobal`
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 100px 40px;
+  padding: 20px 40px 100px;
+
+  @media (min-width: 600px) {
+    padding: 40px 100px;
+  }
 `;
 
 const TemplateWrapper = ({ children }) => (

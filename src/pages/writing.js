@@ -14,8 +14,9 @@ const Year = styled.h3`
 
 const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
   const postsToFilter = edges
-    .map(edge => <PostLink key={edge.node.id} post={edge.node} />);
+    .map(edge => <PostLink post={edge.node} />);
 
+  console.log(postsToFilter)
   return (
     <Container>
       <Section delay={delay.fast}>

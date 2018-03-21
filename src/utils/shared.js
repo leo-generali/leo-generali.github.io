@@ -14,13 +14,13 @@ export const fadeIn = keyframes`
 
 export const Section = styled.section`
   margin-bottom: 30px;
-  animation-fill-mode: backwards;
+  /* animation-fill-mode: backwards;
   animation-timing-function: ease-in-out;
   animation-name: ${fadeIn};
   animation-duration: 0.2s;
   animation-delay: ${props => props.delay};
   animation-iteration-count: 1;
-  animation-direction: normal;
+  animation-direction: normal; */
 `;
 
 export const AnchorStyle = css`

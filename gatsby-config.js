@@ -31,6 +31,11 @@ module.exports = {
               wrapperStyle: 'margin: 30px 0;'
             },
           },
+          {
+            resolve: 'gatsby-remark-prismjs',
+            classPrefix: 'language-',
+            inlineCodeMarker: null
+          },
           'gatsby-remark-copy-linked-files'
         ],
       },
@@ -38,10 +43,8 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-google-analytics',
       options: {
-        trackingId: process.env.GOOGLE_ANALYTICS,
-        // Puts tracking script in the head instead of the body
+        trackingId: 'UA-80982613-1',
         head: false,
-        // Setting this parameter is optional
         anonymize: true,
       },
     },

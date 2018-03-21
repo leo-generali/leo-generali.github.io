@@ -7,17 +7,29 @@ import Navigation from '../components/Navigation';
 import styled, { ThemeProvider, injectGlobal } from 'styled-components';
 import { colors } from '../utils/style';
 
+require('../utils/prism-theme.css');
+
 injectGlobal`
   body {
     background-color: ${colors.backgroundColor};
     border-top: 8px solid ${colors.primaryColor};
+  }
+
+  ::selection {
+    color: ${colors.backgroundColor};
+    background-color: ${colors.linkColor};
+  }
+
+  ::-moz-selection {
+    color: ${colors.backgroundColor};
+    background-color: ${colors.linkColor};
   }
 `;
 
 const Container = styled.div`
   margin: 0 auto;
   max-width: 960px;
-  padding: 100px 40px 0;
+  padding: 100px 40px;
 `;
 
 const TemplateWrapper = ({ children }) => (

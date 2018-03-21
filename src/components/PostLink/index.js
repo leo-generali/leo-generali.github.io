@@ -23,9 +23,7 @@ const Emoji = styled.span`
   margin-right: 10px;
 `;
 
-const Title = Emoji.extend`
-
-`;
+const Title = Emoji.extend``;
 
 const Date = styled.span`
   font-size: 14px;

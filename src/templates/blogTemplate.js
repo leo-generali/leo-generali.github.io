@@ -15,16 +15,15 @@ const Post = Container.extend`
     margin: 0 auto;
   }
 
-  h3 {
+  h2 {
     position: relative;
-    margin: 1.5rem 0 1.25rem;
 
     :after {
       content: '';
       position: absolute;
       background-color: ${colors.primaryColor};
       width: 40px;
-      height: 3px;
+      height: 6px;
       bottom: -10px;
       left: 0;
     }
@@ -33,21 +32,24 @@ const Post = Container.extend`
 
 const Title = styled.h1`
   color: ${colors.primaryColor};
+  margin-bottom: 0;
 `;
 
-const Date = styled.h2``;
+const Date = styled.h3`
+  margin-top: 0;
+`;
 
 const Body = styled.div``;
 
 
-export default function Template({ data }) {
-  console.log(data);
+export default function Template({ data }){
   const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+
   return (
     <Post>
-      <Date>{frontmatter.date}</Date>
       <Title>{frontmatter.title}</Title>
+      <Date>{frontmatter.date}</Date>
       <Body dangerouslySetInnerHTML={{ __html: html }} />
     </Post>
   );

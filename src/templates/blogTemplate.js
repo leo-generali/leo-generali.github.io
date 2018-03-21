@@ -1,31 +1,51 @@
-import React from "react";
+import React from 'react';
 
-import styled from 'styled-components'
+import styled from 'styled-components';
 
-import { styling, colors } from '../utils/style'
+import { styling, colors } from '../utils/style';
+import { AnchorStyle, Container } from '../utils/shared';
 
-const Post = styled.main`
-  max-width: ${styling.maxWidth};
+const Post = Container.extend`
+  a {
+    ${ AnchorStyle }
+  }
+
+  p > img {
+    display: block;
+    margin: 0 auto;
+  }
+
+  h2 {
+    position: relative;
+
+    :after {
+      content: '';
+      position: absolute;
+      background-color: ${colors.primaryColor};
+      width: 40px;
+      height: 6px;
+      bottom: -10px;
+      left: 0;
+    }
+  }
 `;
 
 const Title = styled.h1`
   color: ${colors.primaryColor};
+  margin-bottom: 0;
 `;
 
-const Date = styled.h2`
-
+const Date = styled.h3`
+  margin-top: 0;
 `;
 
-const Body = styled.div`
-
-`;
+const Body = styled.div``;
 
 
-export default function Template({
-  data, // this prop will be injected by the GraphQL query below.
-}) {
-  const { markdownRemark } = data; // data.markdownRemark holds our post data
+export default function Template({ data }){
+  const { markdownRemark } = data;
   const { frontmatter, html } = markdownRemark;
+
   return (
     <Post>
       <Title>{frontmatter.title}</Title>
@@ -33,7 +53,7 @@ export default function Template({
       <Body dangerouslySetInnerHTML={{ __html: html }} />
     </Post>
   );
-}
+};
 
 export const pageQuery = graphql`
   query BlogPostByPath($path: String!) {
@@ -47,4 +67,3 @@ export const pageQuery = graphql`
     }
   }
 `;
-

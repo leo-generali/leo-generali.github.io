@@ -1,14 +1,13 @@
 import Typography from "typography";
 import githubTheme from 'typography-theme-github';
 
-githubTheme.overrideThemeStyles = (options) => ({
+githubTheme.baseFontSize = '18px';
+
+githubTheme.overrideThemeStyles = ({ rhythm }, options ) => ({
   'h1,h2,h3,h4,h5,h6': {
-    paddingBottom: '0',
-    marginTop: '0',
-    borderBottom: 'none'
-  },
-  'a': {
-    color: '#1E3799'
+    marginTop: rhythm(1.3),
+    marginBottom: rhythm(1),
+    borderBottom: 'none',
   }
 })
 

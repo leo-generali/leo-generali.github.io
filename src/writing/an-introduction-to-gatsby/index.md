@@ -25,24 +25,7 @@ You can access the tool through NPM with the following command: `npm install --g
 ## Actually Building the Site
 Like the framework it’s built on top of, Gatsby relies heavily on the concept of components. Components are small blocks of code that are reused throughout your entire site.  Each piece of your UI is a separate entity that should be able to live by itself. For more detailed information, check out of the official [React documentation](https://reactjs.org/docs/components-and-props.html) for a good explanation of how and why you would want to build things this way.
 
-As a side note: I love building sites like this. Extrapolating out common UI elements of your code into reusable lego-like building blocks is fun. It gives me the same thrill I had when I first started developing and making *~magic~* appear on the the page.
-
-Here's an example of my navigation component. You'll see that I reuse some other components within it as well:
-
-```javascript
-const Navigation = () => (
-  <Nav>
-    <StyledNavLink exact to="/">
-      <NavEmoji>🏠 </NavEmoji>Home
-    </StyledNavLink>
-    <StyledNavLink to="/writing">
-      <NavEmoji>📕 </NavEmoji>Writing
-    </StyledNavLink>
-  </Nav>
-);
-```
-
-Not too bad, right?
+As a side note: I love building sites like this. Extrapolating out common UI elements of your code into reusable lego-like building blocks is fun. It gives me the same thrill I had when I first started developing and making ~magic~ appear on the the page.
 
 ## Writing Content
 Gatsby generates markdown files into static HTML at build time for your website. This gives you all the speed and SEO benefits I talked about up there with the option to add in dynamic data if you wish.
@@ -63,9 +46,11 @@ No matter what your build process is, I can almost guarantee that someone’s cr
 ## Problems Gatsby Solved for Me
 I ran into a few other issues with some of the other static site generators I tried out.
 
-Styling my personal site was always more of a pain than it should have been. I had toyed around with some other CSS-in-JS solutions and figured this redesign would be the perfect place use one of those libraries.
+Styling my personal site was always more of a pain than it should have been. I’d try to modify something once every few months an inevitably would run into some sort of issue.
 
-I ended up going with [Styled Components](https://www.styled-components.com/) which I had heard great things about.  I enjoyed the experience and will probably continue using it as my go to styling library for React based applications. Template literals makes so much more sense to me. I don't have to remember to camel case my `font-weight`. In case you haven't heard of Styled Components, here's what you end up with:
+I had used some CSS-in-JS solutions on other projects, but wasn’t implementing them on the last version of my personal site. Thankfully, there’s a Gatsby plugin out there for essentially every styling library available.
+
+I ended up choosing Styled Components, which I really like. No need to remember to camel case your `font-weight` attribute!
 
 ```javascript
 const Year = styled.h3`
@@ -75,13 +60,13 @@ const Year = styled.h3`
 `;
 ```
 
-Some of the other static site generators I tried in the past were built on languages that I didn't have as much experience in. They don’t necessarily need full in-depth knowledge to run them, it didn’t make things easier.
+Another benefit of using Gatsby is that it’s based on a language I have familiarity with. I once ran into a bug with Hugo (which is based on Go). Debugging was a big pain and fixing the issue was tougher than I would have liked. The web is already a pretty complicated place - I don’t need to introduce anything more to make it harder.
 
-In a past life I tried to use Hugo and ran into some Go specific issues. Debugging was a big pain and made fixing issues tougher than I would have liked. The web is already a pretty complicated place - I don’t need to introduce anything more to make it harder.
+On a related token, I also tend to swap between two difference machines: a one running OSX and the other running Windows 10. Having a consistent development experience across both is vital - I'm looking at you Jekyll.
 
-I also tend to swap between two difference machines: a Macbook Pro running OSX and a Dell XPS 13 running Windows 10. Having a consistent development experience across both is vital - I'm looking at you Jekyll.
+Finally, I was getting tired of Github Pages. It’s a great product that can get you up and running virtually instantly, but it’s not as fully featured as some other hosting solutions. After doing some research, I decided to move my my little corner of the internet to [Netlify](https://www.netlify.com/).
 
-Like everyone else running a Gatsby powered site, I decided to host my little corner of the internet on [Netlify](https://www.netlify.com/). I was a little worried about it, but the transfer was friction-less. I was up and running in less than 2 minutes. Netlify is a lot more powerful that Github Pages and takes care of a lot of the behind the scenes magic for you. You have know idea how satisfying it was to finally have my site served over HTTPS rather than HTTP.
+I was a little worried about it considering I had never used it, but the transfer was friction-less. I was up and running in less than 2 minutes. Netlify is a lot more powerful that Github Pages and takes care of a lot of the behind the scenes magic for you. It can do a lot more than just host deployed versions of your pages.
 
 ## So What?
 So… why should you care?

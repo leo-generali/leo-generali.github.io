@@ -24,6 +24,29 @@ injectGlobal`
     color: ${colors.backgroundColor};
     background-color: ${colors.linkColor};
   }
+
+  @keyframes fadeIn{
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .section {
+    animation-fill-mode: backwards;
+    animation-timing-function: ease-in-out;
+    animation-name: fadeIn;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+  }
+
+  .fast { animation-delay: 0.2s }
+  .slow { animation-delay: 0.4s }
 `;
 
 const Container = styled.div`

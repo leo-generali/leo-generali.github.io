@@ -2,7 +2,7 @@ import React from 'react';
 import PostLink from '../components/PostLink';
 
 import { styling, colors, delay } from '../utils/style';
-import { Section, Container } from '../utils/shared';
+import { Container } from '../utils/shared';
 
 import styled, { keyframes } from 'styled-components';
 
@@ -16,13 +16,12 @@ const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
   const postsToFilter = edges
     .map(edge => <PostLink post={edge.node} />);
 
-  console.log(postsToFilter)
   return (
     <Container>
-      <Section>
+      <div className='section fast'>
         <Year>2018</Year>
         {postsToFilter}
-      </Section>
+      </div>
     </Container>
   );
 };

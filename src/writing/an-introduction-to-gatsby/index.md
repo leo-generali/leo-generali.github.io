@@ -5,8 +5,6 @@ emoji: "⚛"
 title: "An Introduction to Gatsby"
 ---
 
-![Leonardo DiCaprio as Gatsby from Great Gatsby](./images/leonardo.jpg)
-
 ## Preface
 I recently rebuilt my personal website from the ground up with Gatsby. If you haven't heard, Gatsby is a static site generator built on React that has got everybody talking. It was super fun to work with and I’ve been gushing about the experience to anyone who would listen ever since. I had such a good time that I figured I'd write about my experience with Gatsby and some of the issues it solved for me.
 

@@ -18,7 +18,7 @@ const Writing = ({ data: { allMarkdownRemark: { edges } } }) => {
 
   return (
     <Container>
-      <div className='section fast'>
+      <div>
         <Year>2018</Year>
         {postsToFilter}
       </div>
